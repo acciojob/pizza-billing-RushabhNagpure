@@ -23,7 +23,12 @@ public class Pizza {
             this.toppings = 120;
         }
 
-        this.bill = "Base Price Of The Pizza " + this.price + "\n";
+        this.isExtraCheeseAdded = false;
+        this.isExtraToppingsAdded = false;
+        this.isBillCreate = false;
+        this.isTakeAway = false;
+
+        this.bill = "Base Price Of The Pizza: " +this.price+ "\n";
 
     }
 
@@ -62,7 +67,6 @@ public class Pizza {
             if (isExtraCheeseAdded) {
                 this.bill += "Extra Cheese Added: 80" + "\n";
             }
-
             if (isExtraToppingsAdded) {
                 this.bill += "Extra Toppings Added: " + this.toppings + "\n";
             }
@@ -73,6 +77,6 @@ public class Pizza {
             this.isBillCreate = true;
             return this.bill;
         }
-        return "" ;
+        return "done" ;
     }
 }
