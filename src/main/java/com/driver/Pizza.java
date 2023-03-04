@@ -64,12 +64,11 @@ public class Pizza {
     public String getBill() {
 
         if (!isBillCreated) {
-            // your code goes here
             if (isExtraCheeseAdded) {
                 this.bill += "Extra Cheese Added: 80"+"\n";
             }
             if (isExtraToppingAdded) {
-                this.bill += "Extra Toppings Added: "+this.toppings + "\n";
+                this.bill += "Extra Toppings Added: "+this.toppings+"\n";
             }
             if (isTakeAway) {
                 this.bill += "Paperbag Added: 20"+"\n";
